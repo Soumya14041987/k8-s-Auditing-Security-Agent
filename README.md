@@ -80,16 +80,4 @@ If you'd like, I can implement the FastAPI UI and Dockerfile now and wire it to 
 - Kubernetes: deploy the container into a cluster with a locked-down service account and namespace.
 - Serverless: avoid direct `kubectl` in serverless functions due to timeouts; instead analyze uploaded manifests.
 
-✅ Next steps (recommended)
 
-1. Add FastAPI web UI & API (`app.py` + `static/index.html`).
-2. Add `Dockerfile` and `docker build`/`run` instructions.
-3. Add a background job store (Redis + RQ/Celery) for robust handling of long-running audits.
-4. Add tests and CI (unit tests for parsing/manifests; integration tests for the API).
-
-If you want, I can implement steps 1 and 2 now (FastAPI + static UI + Dockerfile + basic run instructions).
-
-
-
-Author: Soumyadip
->>>>>>> e0ef836 (K8's Auditing & Security agent code)
