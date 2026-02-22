@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "k8s-security-agent-web"
+version = "0.3.0"
+description = "Kubernetes Security Audit Agent with FastAPI Web UI"
+authors = [ { name = "Soumyadip", email = "soumya14041987@gmail.com" } ]
+requires-python = ">=3.10"
+dependencies = [
+    "anthropic[bedrock]>=0.45.0",
+    "claude-agent-sdk>=0.1.38",
+    "boto3>=1.34.0",
+    "python-dotenv>=1.0.1",
+    "loguru>=0.7.2",
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.31.0"
+]
+
+[project.scripts]
+audit-k8s = "app:run_bedrock_k8s_audit"
