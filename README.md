@@ -80,4 +80,5 @@ If you'd like, I can implement the FastAPI UI and Dockerfile now and wire it to 
 - Kubernetes: deploy the container into a cluster with a locked-down service account and namespace.
 - Serverless: avoid direct `kubectl` in serverless functions due to timeouts; instead analyze uploaded manifests.
 
+<img width="640" height="262" alt="image" src="https://github.com/user-attachments/assets/51d13593-f626-4d9e-9fb3-831ca79b57dd" />
 
